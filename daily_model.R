@@ -139,6 +139,7 @@ for(pollutant_index in 1:4)
 
 
 valid_data |> 
+  dplyr::filter(pollutant %in% c(1,3)) |>
   mutate(bias=STkriging-residuals) |> 
   mutate(se=(STkriging-residuals)^2) |> 
   group_by(pollutant) |> 

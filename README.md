@@ -9,4 +9,6 @@ beijing_data.RData; The tidy pollution data of Beijing city for the study.
 hourly_model; The R code used to implement the spatio-temporal hourly model.
 
 daily_model; The R code used to implement the spatio-temporal daily model.
+
+exampleMap; The R code used to produce predicted pollution surface.
 ....

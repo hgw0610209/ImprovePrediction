@@ -129,6 +129,7 @@ for(pollutant_index in 1:1)
 
 
 valid_data |> 
+  dplyr::filter(pollutant %in% c("NO2","PM25")) |>
   mutate(bias=STkriging-residuals) |> 
   mutate(se=(STkriging-residuals)^2) |> 
   group_by(pollutant) |> 
